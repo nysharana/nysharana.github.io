@@ -2056,6 +2056,11 @@ html.gating #hero .r-name{opacity:0}
 /* 31 Oct: page headers — the right-hand label sits on the same line and weight as "Back to the table" */
 .g-head .top,.am-head .top,.pg-head .top{align-items:baseline!important}
 .g-head .top .eyebrow,.am-head .top .eyebrow,.pg-head .top .eyebrow{letter-spacing:.12em!important;-webkit-text-stroke:.35px currentColor;paint-order:stroke fill;padding:6px 0;line-height:inherit}
+/* 1 Nov: page runs edge to edge (browser's default 8px body margin removed) */
+html,body{margin:0}
+/* 1 Nov: easter-egg counter hugs its text with a fixed, even padding */
+.eggs-n{width:max-content!important;max-width:none;white-space:nowrap;box-sizing:border-box;height:32px;padding:0 12px!important;gap:6px!important;justify-content:center}
+.eggs-n b{display:inline-block;min-width:2.4ch;text-align:left}
 </style>
 
 <!-- ======================= THE GATE ======================= -->
