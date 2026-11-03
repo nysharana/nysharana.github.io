@@ -4,6 +4,23 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="description" content="Nysha Rana: brand, packaging and type designer. Pull up a chair.">
 <meta name="theme-color" content="#F4F2EC">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="alternate icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Nysha Rana">
+<meta property="og:title" content="Nysha Rana: Pull up a chair">
+<meta property="og:description" content="Brand, packaging and type designer. Come in, sit down, and see what’s on the table.">
+<meta property="og:url" content="https://nysharana.github.io/">
+<meta property="og:image" content="https://nysharana.github.io/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Nysha Rana’s hand-drawn dining room: a table set for guests under a hanging lamp.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Nysha Rana: Pull up a chair">
+<meta name="twitter:description" content="Brand, packaging and type designer. Come in, sit down, and see what’s on the table.">
+<meta name="twitter:image" content="https://nysharana.github.io/og-image.jpg">
 <title>Nysha Rana</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kalnia:wght@500&family=Hedvig+Letters+Sans&family=Gaegu:wght@700&display=swap">
@@ -2068,6 +2085,11 @@ html,body{margin:0}
 .eggs-n b{display:inline-block;min-width:2.4ch;text-align:left}
 /* 1 Nov: keep room for the scrollbar at all times, so nothing jumps sideways when the gate opens */
 html{scrollbar-gutter:stable}
+/* 3 Nov: Red Pulse frame map zooms into one eye frame */
+.k-zoom:has(.k-zoom-hi){height:320vh}
+.k-zoom-s img[data-fx]{object-position:50% 50%!important}
+.k-zoom-s .k-zoom-hi{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:none!important;pointer-events:none}
+@media (prefers-reduced-motion:reduce){.k-zoom-s .k-zoom-hi{display:none}}
 </style>
 
 <!-- ======================= THE GATE ======================= -->
@@ -2242,7 +2264,7 @@ html{scrollbar-gutter:stable}
       <div class="ab2-note"><i class="tape" aria-hidden="true"></i><p>A brand is a story<br>before it’s a logo.</p></div>
 
       <div class="ab2-txt">
-        <p>Equal parts <b>structure</b> and <b>spontaneity</b>, with a little bit of whimsy. The long version comes with a booth strip, a receipt and a few confessions.</p>
+        <p>Equal parts <b>structure</b> and <b>spontaneity</b>, with curiosity always on the menu. Want to see how it all comes together? There’s more to the story.</p>
         <a class="cta" href="#about-me" data-go="about-me">More about me →</a>
       </div>
 
@@ -2499,7 +2521,7 @@ html{scrollbar-gutter:stable}
     <header class="pg-head">
       <div class="top"><a class="back" href="#top" data-go="top">← Back to the table</a><span class="eyebrow">Marinating · the whole fridge</span></div>
       <h1>Marinating<span class="ast" data-stop>*</span></h1>
-      <p class="pg-lede">Nothing here was assigned. All of it was fun.</p>
+      <p class="pg-lede">Ideas soaking up flavour. Nothing here was assigned.</p>
     </header>
     <div class="pg-bar">
       <nav class="pg-tabs" id="pgTabs" aria-label="Pick a shelf"></nav>
@@ -2623,7 +2645,7 @@ html{scrollbar-gutter:stable}
      d:'An immersive exhibition that brings the nostalgia of Indian homes to life.',
      tag:'Where Memory Lives.',
      sum:'An exhibition that lets you ==walk back into the Indian homes you grew up in.==',
-     facts:[['Role','Solo project'],['Time','4 months'],['Tools','Illustrator, Photoshop, After Effects'],['Guided by','Ms. Monaz']],
+     facts:[['Discipline','Exhibition branding'],['Made','Identity, wayfinding, posters, motion'],['Tools','Illustrator, Photoshop, After Effects'],['Time','4 months']],
      glance:[['What it is','An exhibition identity for a French film, made **at home in India**.'],['What I made','A logo, four colours, wayfinding, posters, **merch and social**.'],['What stuck','A logo you can **walk through**.']],
      secs:[
       {lab:'The Brief', h:'Reinterpret [[Amélie]] for India.', p:['Not its look. Its feeling: finding magic in small, everyday moments.'],
@@ -2647,7 +2669,7 @@ html{scrollbar-gutter:stable}
      d:'An expressive display typeface where the letters refuse to behave.',
      tag:'At the Brim of Memory.',
      sum:'A display typeface caught ==at the brim of a moment==, just before it becomes a memory.',
-     facts:[['Role','Solo project'],['Time','4 months'],['Tools','Illustrator, Photoshop, Glyphs'],['Guided by','Ms. Esther']],
+     facts:[['Discipline','Type design'],['Made in','Marseille, France'],['Tools','Illustrator, Photoshop, Glyphs'],['Time','4 months']],
      glance:[['What it is','An experimental **display typeface**,\u00a0A\u00a0to\u00a0Z.'],['What I made','**26 glyphs**, a poster series, editorial and packaging.'],['What stuck','**3 weeks** from never opening Glyphs to a finished typeface.']],
      secs:[
       {lab:'The Idea', h:'At the edge of something.', p:['Letters that taper, stretch and drift, like a memory softening at its edges.'], raw:"<figure class=\"k-fx k-full\"><img src=\"img/b2/brim-arch.jpg\" alt=\"\u201cBrim takes its name from being at the brim of something.\u201d Set in Brim.\" loading=\"lazy\"><figcaption>\u201cBrim takes its name from being at the brim of something.\u201d Set in Brim.</figcaption></figure>"},
@@ -2669,14 +2691,14 @@ html{scrollbar-gutter:stable}
      hero:"<img src=\"img/rp/banner.webp\" alt=\"Red Pulse: the title card, hand-lettered in red and yellow.\">",
      d:"One cricket ball, from a floodlit stadium to a Mumbai gully.",
      tag:"One ball. Two worlds.",
-     sum:"A 47-second film that follows ==one cricket ball== from a floodlit stadium to a Mumbai gully. The clips are AI-generated in Google Flow, which was a learning curve all of its own.",
-     facts:[["Format", "Mixed-media animation"], ["Length", "47 seconds"], ["Footage", "AI-generated, Google Flow"], ["Timeline", "2 weeks"]],
+     sum:"A 47-second film that follows ==one cricket ball== from a floodlit stadium to a Mumbai gully. Motion was the thing I always avoided, so this time I took it on, with clips made in Google Flow and every frame drawn over by hand.",
+     facts:[["Format", "47-second film"], ["Frames", "178, illustrated by hand"], ["Tools", "Google Flow, Procreate, After Effects"], ["Time", "2 weeks"]],
      glance:[["What it is", "A short film where **a cricket ball** is the main character."], ["What I made", "A storyboard, **178 illustrated frames**, the edit and the title cards."], ["What stuck", "Black-and-white footage, a **red ball**, and illustrations that never sit still."]],
      secs:[
       {lab:"The Brief", h:"The thing I always ==ran away from==.", p:["Motion has always felt hard and a little intimidating to me, so for years I quietly avoided it. This time I picked it on purpose, and challenged myself to make a film from start to finish."]},
-      {lab:"The Idea", h:"The same love for the game. ==Wherever it’s played.==", p:["A stadium has floodlights and rules. A gully has streetlights and a slipper for a stump. Follow one ball through both, and the excitement doesn’t change."], raw:"<div class=\"k-vs2\" data-side=\"0\"><div class=\"k-vs2-sw\" role=\"group\" aria-label=\"Switch between the stadium and the gully\"><button type=\"button\" aria-pressed=\"true\" data-s=\"0\">The stadium</button><button type=\"button\" aria-pressed=\"false\" data-s=\"1\">The gully</button><i aria-hidden=\"true\"></i></div><ul><li><span class=\"a\">Floodlights</span><span class=\"b\">Streetlights</span></li><li><span class=\"a\">Professional players</span><span class=\"b\">Neighbourhood kids</span></li><li><span class=\"a\">Fixed boundaries</span><span class=\"b\">Imagined ones</span></li><li><span class=\"a\">Official scoreboards</span><span class=\"b\">Handwritten scores</span></li><li><span class=\"a\">A stadium crowd</span><span class=\"b\">A gully crowd</span></li></ul></div>"},
-      {lab:"The Process", h:"Pencil first. Then ==178 frames== of illustration.", p:["The story was mapped on paper before anything moved: hit into the crowd, caught by a kid, dropped into a gully match, out through a broken window and back into the stadium through a TV. The clips came from Google Flow, and then every frame was drawn over, one at a time."], note:"every great gully match ends with a broken window.", raw:"<div class=\"k-two\"><figure class=\"k-fx\"><img src=\"img/rp/02-storyboard-page-1.webp\" alt=\"Storyboard, page one: the stadium.\" loading=\"lazy\"><figcaption>Storyboard, page one: the stadium.</figcaption></figure><figure class=\"k-fx\"><img src=\"img/rp/03-storyboard-page-2.webp\" alt=\"Storyboard, page two: the gully and the TV.\" loading=\"lazy\"><figcaption>Storyboard, page two: the gully and the TV.</figcaption></figure></div><div class=\"k-zoom\"><div class=\"k-zoom-s\"><img src=\"img/rp/04-frame-sequence.webp\" alt=\"All 178 illustrated frames laid out in order: the whole film, mapped.\" loading=\"lazy\"><p class=\"hand k-zoom-n\">the whole film, mapped frame by frame.</p></div></div>"},
+      {lab:"The Idea", h:"The same love for the game. ==Wherever it’s played.==", p:["A stadium has floodlights and rules. A gully has streetlights and a slipper for a stump. Follow one ball through both, and the excitement doesn’t change."], raw:"<div class=\"k-vs2\" data-side=\"0\"><div class=\"k-vs2-sw\" role=\"group\" aria-label=\"Switch between the stadium and the gully\"><button type=\"button\" aria-pressed=\"true\" data-s=\"0\">The stadium</button><button type=\"button\" aria-pressed=\"false\" data-s=\"1\">The gully</button><i aria-hidden=\"true\"></i></div><ul><li><span class=\"a\">Floodlights</span><span class=\"b\">Streetlights</span></li><li><span class=\"a\">Professional players</span><span class=\"b\">Neighbourhood kids</span></li><li><span class=\"a\">Fixed boundaries</span><span class=\"b\">Imagined boundaries</span></li><li><span class=\"a\">Official scoreboards</span><span class=\"b\">Memorised scores</span></li><li><span class=\"a\">A stadium crowd</span><span class=\"b\">A gully crowd</span></li></ul></div>"},
       {lab:"The Film", h:"Press play. ==Sound on.==", p:["All 47 seconds, start to finish."], raw:"<figure class=\"k-film\"><video src=\"img/rp/film.mp4\" poster=\"img/rp/film-poster.jpg\" controls playsinline preload=\"none\" aria-label=\"Red Pulse, the full film.\"></video></figure>"},
+      {lab:"The Process", h:"Pencil first. Then ==178 frames== of illustration.", p:["The story was mapped on paper before anything moved: hit into the crowd, caught by a kid, dropped into a gully match, out through a broken window and back into the stadium through a TV. The clips came from Google Flow, and then every frame was drawn over, one at a time."], note:"every great gully match ends with a broken window.", raw:"<div class=\"k-two\"><figure class=\"k-fx\"><img src=\"img/rp/02-storyboard-page-1.webp\" alt=\"Storyboard, page one: the stadium.\" loading=\"lazy\"><figcaption>Storyboard, page one: the stadium.</figcaption></figure><figure class=\"k-fx\"><img src=\"img/rp/03-storyboard-page-2.webp\" alt=\"Storyboard, page two: the gully and the TV.\" loading=\"lazy\"><figcaption>Storyboard, page two: the gully and the TV.</figcaption></figure></div><div class=\"k-zoom\"><div class=\"k-zoom-s\"><img src=\"img/rp/04-frame-sequence.webp\" alt=\"All 178 illustrated frames laid out in order: the whole film, mapped.\" loading=\"lazy\" data-fx=\"309.5\" data-fy=\"497.5\" data-fw=\"100\" data-fh=\"57\"><img class=\"k-zoom-hi\" src=\"img/rp/eye-hi.webp\" alt=\"\" aria-hidden=\"true\" loading=\"lazy\"><p class=\"hand k-zoom-n\">the whole film, mapped frame by frame.</p></div></div>"},
       {lab:"The Breakdown", h:"Black and white, with a pulse.", p:["Black-and-white footage and hard shadows, so the only real colour is the ball. The illustrations do the shouting: yellow and cyan in the stadium, pink and green in the gully."], raw:"<div class=\"k-seq\"><div class=\"k-two\"><figure class=\"k-fx\"><img src=\"img/rp/05-ball-grip-yellow-accents.webp\" alt=\"The grip.\" loading=\"lazy\"><figcaption>The grip.</figcaption></figure><figure class=\"k-fx\"><img src=\"img/rp/06-ball-toss-yellow-accents.webp\" alt=\"The toss.\" loading=\"lazy\"><figcaption>The toss.</figcaption></figure></div><figure class=\"k-fx k-full\"><img src=\"img/rp/12-stadium-ball-rings.webp\" alt=\"The stadium: yellow and cyan.\" loading=\"lazy\"><figcaption>The stadium: yellow and cyan.</figcaption></figure><div class=\"k-two\"><figure class=\"k-fx\"><img src=\"img/rp/07-ball-toss-green-frame.webp\" alt=\"Caught.\" loading=\"lazy\"><figcaption>Caught.</figcaption></figure><figure class=\"k-fx\"><img src=\"img/rp/08-ball-closeup-green-frame.webp\" alt=\"Kept.\" loading=\"lazy\"><figcaption>Kept.</figcaption></figure></div><div class=\"k-two\"><figure class=\"k-fx\"><img src=\"img/rp/10-ball-pink-window.webp\" alt=\"The last ball.\" loading=\"lazy\"><figcaption>The last ball.</figcaption></figure><figure class=\"k-fx\"><img src=\"img/rp/11-television-green-scribbles.webp\" alt=\"Back through the TV.\" loading=\"lazy\"><figcaption>Back through the TV.</figcaption></figure></div></div>"},
       {lab:"The Aftertaste", take:true, h:"The rules change. The rush doesn’t.", p:["The thing I was scared of became ==the project I learned the most from==."]}
      ]},
@@ -2691,7 +2713,7 @@ html{scrollbar-gutter:stable}
      d:"Me, as a product: a bandage that keeps evolving.",
      tag:"Mix. Match. Mend.",
      sum:"If I were a product on a shelf, I’d be ==a bandage that keeps evolving==. One base, five mixes, endless fixes.",
-     facts:[["Brief", "Creative persona"], ["Product", "Evolving bandage"], ["Made", "Logo, box, bandages, cartridges"], ["Ways to use", "5"]],
+     facts:[["Discipline", "Packaging and identity"], ["The product", "A bandage with five swappable cartridges"], ["Made", "Wordmark, box, cartridges, bandages"], ["Tools", "Illustrator, Photoshop"]],
      glance:[["What it is", "Me, Nysha, packaged as **a bandage that keeps evolving**."], ["What I made", "The wordmark, the box and its dieline, **five cartridges** and the bandages."], ["What stuck", "Turning **adaptable** into something you can actually click."]],
      secs:[
       {lab:"The Brief", h:"If I were a product, ==what would I be==?", p:["The brief was to build a creative persona: take the things I bring to a team and turn them into something you could actually pick up, use and keep coming back to."], note:"first, an honest list of what I bring to the table.", raw:"<div class=\"k-words\" aria-label=\"Me, as a product: Fresh perspective, Determined, Reliable, Adaptable, Fun, Layered, Evolving, Helpful, Flexible, Supportive, Focused, Understanding, Practical\"><b>Me</b><span style=\"--i:0;left:50.0%;top:14.0%\">Fresh perspective</span><span style=\"--i:1;left:67.7%;top:18.1%\">Determined</span><span style=\"--i:2;left:81.3%;top:29.5%\">Reliable</span><span style=\"--i:3;left:87.7%;top:45.7%\">Adaptable</span><span style=\"--i:4;left:85.5%;top:62.8%\">Fun</span><span style=\"--i:5;left:75.2%;top:76.9%\">Layered</span><span style=\"--i:6;left:59.1%;top:85.0%\">Evolving</span><span style=\"--i:7;left:40.9%;top:85.0%\">Helpful</span><span style=\"--i:8;left:24.8%;top:76.9%\">Flexible</span><span style=\"--i:9;left:14.5%;top:62.8%\">Supportive</span><span style=\"--i:10;left:12.3%;top:45.7%\">Focused</span><span style=\"--i:11;left:18.7%;top:29.5%\">Understanding</span><span style=\"--i:12;left:32.3%;top:18.1%\">Practical</span></div>"},
@@ -2714,8 +2736,8 @@ html{scrollbar-gutter:stable}
      d:"A juice range where every can is a little adventure in the orchard.",
      tag:"Pick. Climb. Swing. Sip.",
      sum:"A five-flavour juice range for Paper Boat where every can is ==a little adventure in the orchard==.",
-     facts:[["Brand", "Paper Boat"], ["Range", "5 flavours"], ["Made", "Character, illustrations, labels"], ["Format", "Wrap-around can label"]],
-     glance:[["What it is", "A juice range for **Paper Boat**, five flavours strong."], ["What I made", "A character, **five fruit illustrations** and the labels they live on."], ["What stuck", "Playfulness sells, when **every detail** is in on the joke."]],
+     facts:[["Discipline", "Packaging and illustration"], ["Range", "Five flavours, five labels"], ["Made", "Character, fruit illustrations, wrap-around labels"], ["Tools", "Illustrator, Photoshop"]],
+     glance:[["What it is", "A juice range for **Paper Boat**, five flavours strong."], ["What I made", "A character, **five fruit illustrations** and the labels they live on."], ["What stuck", "Playfulness works best when it’s built into **every detail**."]],
      secs:[
       {lab:"The Idea", h:"Borrowing Paper Boat’s ==sense of play==.", p:["Paper Boat has always felt like a childhood summer: a little nostalgic, a lot of fun. So the direction leans in. One girl in dungarees, a tree full of giant fruit, and a juice that has to be earned.", "Most juice cans use photos of fruit. Illustration is the harder route: you’re drawing a whole world and putting a character in it. But this range is for ==children==, and the research backs that up: put a character on the pack and children pick it first, even when what’s inside is identical. So the cans tell a story, with a character to follow."], raw:"<div class=\"k-research\"><div><b>87.5%</b><p>of children aged 4 to 6 picked the snack with a cartoon character on the pack, when both packs held the exact same food.</p><a href=\"https://media.ruddcenter.uconn.edu/PDFs/LicensedCharacters_Pediatrics_7.10.pdf\" target=\"_blank\" rel=\"noopener\">Roberto et al., 2010 · Pediatrics</a></div><div><b>72.5%</b><p>still went for the character, even when the snack was plain carrots. They also said the character food tasted better.</p><a href=\"https://media.ruddcenter.uconn.edu/PDFs/LicensedCharacters_Pediatrics_7.10.pdf\" target=\"_blank\" rel=\"noopener\">Roberto et al., 2010 · Pediatrics</a></div></div><figure class=\"k-fx k-full k-bob\"><img src=\"img/sw/illustrations.webp\" alt=\"The girl in dungarees with an orange slice, a mango, an apple and a ladder.\" loading=\"lazy\"><figcaption>One girl, a lot of climbing.</figcaption></figure>"},
       {lab:"The Range", h:"Five flavours. ==Five stunts.==", p:["She hangs off the apple, rides the mango, swings from the lemon. Each flavour gets its own colour and its own way up the tree."], raw:"<figure class=\"k-flipw k-flip-lab\"><div class=\"k-flip\" data-ms=\"1200\" data-names=\"Tasty Apple|Lively Orange|Slurpy Mango|Zesty Lemon|Mixed Fruit Medley\"><img src=\"img/sw/label-apple.webp\" alt=\"The five flat labels, one after the other.\" loading=\"lazy\" class=\"on\"><img src=\"img/sw/label-orange.webp\" alt=\"\" aria-hidden=\"true\" loading=\"lazy\"><img src=\"img/sw/label-mango.webp\" alt=\"\" aria-hidden=\"true\" loading=\"lazy\"><img src=\"img/sw/label-lemon.webp\" alt=\"\" aria-hidden=\"true\" loading=\"lazy\"><img src=\"img/sw/label-mixed-fruit.webp\" alt=\"\" aria-hidden=\"true\" loading=\"lazy\"></div><figcaption>The labels, flat.</figcaption></figure>"},
@@ -2734,7 +2756,7 @@ html{scrollbar-gutter:stable}
      d:"A deck of cards that lays out the Mumbai local, one station at a time.",
      tag:"Shuffle the Hustle.",
      sum:"A deck of playing cards that ==joins up into the Mumbai local==: the train I grew up on, folded into a box.",
-     facts:[["Lines", "Western, Central, Harbour"], ["Made", "Cards, box, a rail map"], ["Format", "Printed playing cards"], ["Language", "English + Hindi"]],
+     facts:[["Discipline", "Product and packaging"], ["Lines", "Western, Central and Harbour"], ["Made", "Playing cards, box, rail map"], ["Tools", "Illustrator, Photoshop"]],
      glance:[["What it is", "A playing-card deck where **every card is a stretch of the Mumbai local**."], ["What I made", "The cards, the box, and **a rail map you can rebuild** by laying them end to end."], ["What stuck", "The train that **taught me Mumbai** now fits in a pocket."]],
      secs:[
       {lab:"The Commute", h:"I grew up ==on the local==.", p:["School, college, every first day and every late night. The Mumbai local is where I learnt to read a crowd, find a gap, and keep my balance without holding on."], note:"window seat: rare. worth fighting for.", raw:"<div class=\"k-tick\" role=\"img\" aria-label=\"A station indicator board scrolling through station names.\"><span class=\"k-tick-l\">Next station</span><div class=\"k-tick-v\"><div class=\"k-tick-t\"><span>Churchgate</span><span>Marine Lines</span><span>Charni Road</span><span>Grant Road</span><span>Mumbai Central</span><span>Mahalaxmi</span><span>Dadar</span><span>Bandra</span><span>Santacruz</span><span>Andheri</span><span>Borivali</span><span>CSMT</span><span>Masjid</span><span>Sandhurst Road</span><span>Kurla</span><span>Vidyavihar</span><span>Thane</span><span>Kalva</span><span>Mumbra</span><span>Ambernath</span><span>Asangaon</span><span>Dockyard Road</span><span>Chunabhatti</span><span>GTB Nagar</span><span>Churchgate</span><span>Marine Lines</span><span>Charni Road</span><span>Grant Road</span><span>Mumbai Central</span><span>Mahalaxmi</span><span>Dadar</span><span>Bandra</span><span>Santacruz</span><span>Andheri</span><span>Borivali</span><span>CSMT</span><span>Masjid</span><span>Sandhurst Road</span><span>Kurla</span><span>Vidyavihar</span><span>Thane</span><span>Kalva</span><span>Mumbra</span><span>Ambernath</span><span>Asangaon</span><span>Dockyard Road</span><span>Chunabhatti</span><span>GTB Nagar</span></div></div></div>"},
@@ -3226,8 +3248,18 @@ html{scrollbar-gutter:stable}
           el.style.transform = `translateY(${(t * 46).toFixed(1)}px) scale(${(1 - Math.abs(t) * .07).toFixed(3)})`; });
         zms.forEach(z => { const r = z.getBoundingClientRect(); if (r.bottom < 0 || r.top > vh) return;
           const pr = Math.max(0, Math.min(1, -r.top / Math.max(1, r.height - vh)));
-          const e = pr * pr * (3 - 2 * pr), im = z.querySelector('img'), n = z.querySelector('.k-zoom-n');
-          im.style.transform = `scale(${(1 + e * 1.55).toFixed(3)})`; if (n) n.style.opacity = Math.max(0, (pr - .55) / .3).toFixed(2); });
+          const e = pr * pr * (3 - 2 * pr), im = z.querySelector('img'), n = z.querySelector('.k-zoom-n'), hi = z.querySelector('.k-zoom-hi');
+          if (im.dataset.fx && im.naturalWidth){
+            /* 3 Nov: fly into one eye frame of the map, then hand over to the full-res frame */
+            const vw = z.clientWidth, vh2 = im.clientHeight, s0 = Math.max(vw / im.naturalWidth, vh2 / im.naturalHeight);
+            const cx = vw/2 + (+im.dataset.fx - im.naturalWidth/2) * s0, cy = vh2/2 + (+im.dataset.fy - im.naturalHeight/2) * s0;
+            const S = Math.max(vw / (+im.dataset.fw * s0), vh2 / (+im.dataset.fh * s0));
+            const sc = Math.pow(S, e), k = (sc - 1) / (S - 1);
+            im.style.transformOrigin = `${cx.toFixed(1)}px ${cy.toFixed(1)}px`;
+            im.style.transform = `translate(${(k * (vw/2 - cx)).toFixed(1)}px,${(k * (vh2/2 - cy)).toFixed(1)}px) scale(${sc.toFixed(3)})`;
+            if (hi) hi.style.opacity = Math.max(0, Math.min(1, (e - .82) / .14)).toFixed(3);
+          } else im.style.transform = `scale(${(1 + e * 1.55).toFixed(3)})`;
+          if (n) n.style.opacity = Math.max(0, (pr - .55) / .3).toFixed(2); });
         pats.forEach((p,k) => { const r = p.getBoundingClientRect(); if (r.bottom < -100 || r.top > vh + 100) return; const o = ((r.top - vh/2) * .35) % 300; p.style.transform = `translate3d(${((k ? 1 : -1) * o).toFixed(1)}px,0,0)`; });
       };
       fxH = () => { if (!q) q = requestAnimationFrame(run); };
@@ -3500,7 +3532,7 @@ html{scrollbar-gutter:stable}
     ["Punch needle", "Work in progress", "photography-16-punch-needle-wip", 0, "Punch needle"]
   ];
   const PG_NOTE = {
-    All:'Nothing here was assigned. All of it was fun.',
+    All:'Ideas soaking up flavour. Nothing here was assigned.',
     Photography:'I love framing things, and finding type in the wild: signs, plaques, painted letters. And the odd sunset.',
     Posters:'Where I play with effects: halftones, blur, colour pushed a little too far, type that breaks the grid.',
     'Punch needle':'Slow work for a fast brain. One loop at a time.'
@@ -4066,6 +4098,16 @@ html{scrollbar-gutter:stable}
   let tx = null;
   box.addEventListener('touchstart', e => { tx = e.touches[0].clientX; }, {passive:true});
   box.addEventListener('touchend', e => { if (tx == null) return; const d = e.changedTouches[0].clientX - tx; if (Math.abs(d) > 50) show(at + (d < 0 ? 1 : -1)); tx = null; });
+})();
+
+/* 3 Nov: chairs just move on hover, no tag */
+(function(){
+  const isChair = el => el && el.closest && el.closest('.scn .obj[aria-label="A spare chair"], .scn .obj[aria-label="Your chair"]');
+  document.querySelectorAll('.scn .obj[aria-label="A spare chair"], .scn .obj[aria-label="Your chair"]').forEach(o => { o.classList.add('quiet'); o.removeAttribute('role'); o.setAttribute('tabindex','-1'); o.setAttribute('aria-hidden','true'); });
+  ['mouseenter','mouseover','pointerenter','focus','focusin','click'].forEach(ev => addEventListener(ev, e => {
+    const c = e.target && e.target.nodeType === 1 ? isChair(e.target) : null;
+    if (c){ e.stopImmediatePropagation(); if (ev === 'click') e.preventDefault(); }
+  }, true));
 })();
 
 })();
