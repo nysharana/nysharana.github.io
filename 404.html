@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#F4F2EC">
+<title>Table not found · Nysha Rana</title>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kalnia:wght@500&family=Hedvig+Letters+Sans&family=Gaegu:wght@700&display=swap">
+<style>
+  :root{--B:#0B5497;--C:#F4F2EC;--W:#FFFFFF;--dot:rgba(11,84,151,.16);
+    --display:'Kalnia',Georgia,serif;--body:'Hedvig Letters Sans',system-ui,sans-serif;--hand:'Gaegu',cursive}
+  *{box-sizing:border-box}
+  html,body{margin:0;min-height:100%}
+  body{min-height:100svh;background:radial-gradient(var(--dot) 1.1px,transparent 1.3px) 0 0/22px 22px,var(--C);color:var(--B);font:400 17px/1.6 var(--body);
+    display:flex;flex-direction:column;align-items:center;justify-content:center;padding:32px 16px 40px;text-align:center;overflow-x:hidden}
+  a{color:inherit}
+  .star{position:fixed;top:14px;left:18px;font:500 66px/1 var(--display);text-decoration:none;height:44px;padding-top:22px;display:flex;align-items:center}
+  .star:focus-visible,.btn:focus-visible{outline:2px solid var(--B);outline-offset:4px}
+  .eyebrow{font:500 12px/1 var(--body);letter-spacing:.14em;text-transform:uppercase;margin:0 0 22px}
+
+  /* 4 [plate] 4 */
+  .num{display:flex;align-items:center;justify-content:center;gap:clamp(4px,1.5vw,18px);margin:0 0 10px}
+  .num b{font:500 clamp(110px,22vw,230px)/.9 var(--display);letter-spacing:-.02em}
+  .plate{width:clamp(164px,31vw,328px);height:auto;overflow:visible}
+  .plate *{fill:none;stroke:var(--B);stroke-width:3;stroke-linecap:round;stroke-linejoin:round;vector-effect:non-scaling-stroke}
+  .plate .rim{fill:var(--W)}
+  .plate .crumb{fill:var(--B);stroke:none}
+  .plate .cutlery{transform-box:fill-box;transform-origin:50% 0;animation:sway 3.4s ease-in-out infinite}
+  .plate .knife{animation-delay:-1.7s}
+  .plate .spin{transform-box:view-box;transform-origin:130px 130px;animation:spin 14s linear infinite}
+  @keyframes sway{0%,100%{transform:rotate(-3deg)}50%{transform:rotate(3deg)}}
+  @keyframes spin{to{transform:rotate(360deg)}}
+
+  h1{font:500 clamp(34px,5.6vw,58px)/1.08 var(--display);margin:6px 0 14px;text-wrap:balance}
+  p.lede{max-width:34ch;margin:0 auto 26px;text-wrap:pretty}
+  .hl{background:linear-gradient(transparent 58%,rgba(11,84,151,.16) 58%) no-repeat;background-size:0% 100%;animation:sweep 1s .6s ease forwards}
+  @keyframes sweep{to{background-size:100% 100%}}
+  .note{font:700 22px/1.2 var(--hand);transform:rotate(-3deg);margin:0 0 26px;opacity:.9}
+  .btns{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+  .btn{display:inline-flex;align-items:center;gap:8px;padding:14px 22px;border:1.5px solid var(--B);border-radius:999px;font:500 12px/1 var(--body);letter-spacing:.12em;text-transform:uppercase;text-decoration:none;background:var(--B);color:var(--W);transition:background .2s,color .2s}
+  .btn.ghost{background:transparent;color:var(--B)}
+  .btn:hover{background:var(--W);color:var(--B)}
+  .btn.ghost:hover{background:var(--B);color:var(--W)}
+  footer{position:fixed;bottom:14px;left:0;right:0;font:400 12px/1 var(--body);letter-spacing:.08em;opacity:.7}
+  @media (max-width:520px){footer{position:static;margin-top:34px}.note{font-size:19px}}
+  @media (prefers-reduced-motion:reduce){*{animation:none!important}.hl{background-size:100% 100%}}
+</style>
+<a class="star" href="/" aria-label="Nysha Rana, home">*</a>
+<main>
+  <p class="eyebrow">Error 404 · Table not found</p>
+  <div class="num" aria-hidden="true">
+    <b>4</b>
+    <svg class="plate" viewBox="-34 0 328 260">
+      <g class="spin">
+        <circle class="rim" cx="130" cy="130" r="112"/>
+        <circle cx="130" cy="130" r="80"/>
+        <circle class="crumb" cx="104" cy="150" r="3.2"/>
+        <circle class="crumb" cx="152" cy="112" r="2.4"/>
+        <circle class="crumb" cx="118" cy="104" r="1.8"/>
+      </g>
+      <g class="cutlery fork">
+        <path d="M-6 52v54M-14 52v26q0 12 8 14q8-2 8-14V52M-6 106v104"/>
+      </g>
+      <g class="cutlery knife">
+        <path d="M266 52q12 18 10 64q-2 10-10 10M266 52v158"/>
+      </g>
+    </svg>
+    <b>4</b>
+  </div>
+  <h1>This plate’s <span class="hl">licked clean.</span></h1>
+  <p class="lede">The page you ordered isn’t on the menu any more. Maybe it moved tables, maybe someone ate it. Either way, your seat is still warm.</p>
+  <p class="note">we even checked under the table.</p>
+  <nav class="btns" aria-label="Where to next">
+    <a class="btn" href="/">← Back to the table</a>
+    <a class="btn ghost" href="/#work">See what’s cooking</a>
+  </nav>
+</main>
+<footer>© 2026 Nysha Rana*</footer>
+</html>
