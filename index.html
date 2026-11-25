@@ -21,6 +21,15 @@
 <meta name="twitter:title" content="Nysha Rana: Pull up a chair">
 <meta name="twitter:description" content="Brand, packaging and type designer. Come in, sit down, and see what’s on the table.">
 <meta name="twitter:image" content="https://nysharana.github.io/og-image.jpg">
+<style id="am-novideo">
+/* 25 Nov: process video removed for now; intro fills the space */
+#aboutPage .am-head{grid-template-columns:minmax(0,1fr)!important}
+#aboutPage .am-intro{max-width:none;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:clamp(30px,6vw,96px);row-gap:18px;align-items:end;padding-top:clamp(18px,3vw,40px)}
+#aboutPage .am-tag{grid-column:1;grid-row:1 / span 3;align-self:center;font-size:clamp(40px,4.9vw,78px);line-height:1.04;text-wrap:nowrap}
+#aboutPage .am-sum{grid-column:2;max-width:46ch;font-size:clamp(18px,1.5vw,21px)!important}
+#aboutPage .am-intro .am-sum + .am-sum{margin-top:0}
+@media (max-width:900px){#aboutPage .am-intro{grid-template-columns:1fr}#aboutPage .am-tag,#aboutPage .am-sum{grid-column:1;grid-row:auto}#aboutPage .am-tag{font-size:clamp(40px,11vw,60px);margin-bottom:6px}}
+</style>
 <title>Nysha Rana</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kalnia:wght@500&family=Hedvig+Letters+Sans&family=Gaegu:wght@700&display=swap">
@@ -2368,16 +2377,7 @@ html{scrollbar-gutter:stable}
         <p class="am-sum"><mark>Research</mark> drives my thinking.<br><mark>Experimentation</mark> shapes my&nbsp;work.</p>
       </div>
 
-      <div class="am-booth am-reel" id="booth">
-        <figure class="reel35" role="img" aria-label="Process video">
-          <span class="ed ed-t">35mm FILM</span>
-          <div class="holes" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
-          <div class="r35-win"><div class="ph"><span>[ process video ]</span></div></div>
-          <div class="holes" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
-          <span class="ed ed-b1">1</span><span class="ed ed-b2">1A</span>
-        </figure>
-        <button id="boothBtn" type="button" hidden></button>
-      </div>
+      <div id="booth" hidden><button id="boothBtn" type="button" hidden></button></div>
     </header>
 
     <section class="am-deck" id="amDeck" aria-label="Small plates, big personality">
